@@ -231,5 +231,24 @@ hr {
 }
 
 .footer-navbar{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    margin: 20px 0px;
+
+    & a{
+        margin: 0px 10px;
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+    }
+}
+
+.contact-section > .copyrights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    color: grey;
 }
