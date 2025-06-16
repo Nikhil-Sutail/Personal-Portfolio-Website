@@ -5,6 +5,8 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* ======= SECTION: NAVBAR ======= */
+
 .navbar {
     height: 10vh;
     width: 100vw;
@@ -12,7 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: red; */
 }
 
 .navbar>.name-logo {
@@ -28,31 +29,34 @@
     }
 }
 
+/* ======= SECTION: HERO-SECTION ======= */
+
 .hero-section {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 0px 40px;
     margin: 75px 0px;
 }
 
 .hero-section>.content-section {
     /* background-color: red; */
-    font-size: 1.6rem;
+    width: 50%;
+    font-size: 1.4rem;
+}
+
+.hero-section>.img {
+    /* background-color: red; */
+    & img {
+        height: 60vh;
+        width: 60vh;
+        border-radius: 50%;
+    }
 }
 
 #element {
     color: rgb(26, 89, 206);
     font-size: 3.2rem;
-}
-
-.hero-section>.img {
-
-    /* background-color: red; */
-    & img {
-        height: 60vh;
-        border-radius: 50%;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -65,6 +69,8 @@ hr {
     width: 85vw;
     margin: 40px auto;
 }
+
+/* ======= SECTION: ABOUT-SECTION ======= */
 
 .about-section {
     padding: 0px 40px;
@@ -93,14 +99,17 @@ hr {
 }
 
 .about-section>.about>.about-img {
+    /* background-color: red; */
     & img {
-        height: 80vh;
+        height: 60vh;
+        width: 60vh;
         border-radius: 20%;
     }
 }
 
 .about-section>.about>.about-content {
-    margin-left: 80px;
+    /* background-color: red; */
+    width: 65%;
     font-size: 1.2rem;
 }
 
@@ -110,9 +119,17 @@ hr {
     padding: 10px;
     margin: 20px 0px 0px 0px;
     font-size: 1.2rem;
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
 }
+
+@media screen and (max-width: 480px) {
+    .about-section > .about {
+        flex-direction: column;
+    }
+}
+
+/* ======= SECTION: PROJECTS-SECTION ======= */
 
 .projects-section {
     padding: 0px 40px;
@@ -136,7 +153,7 @@ hr {
 .projects-section>.projects {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .projects-section>.projects>.amazon-website-clone,
@@ -185,6 +202,8 @@ hr {
     }
 }
 
+/* ======= SECTION: CONTACT-SECTION ======= */
+
 .contact-section{
     padding: 0px 40px;
 }
@@ -209,7 +228,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30vw;
+    width: 70vh;
     border: 2px solid black;
     border-radius: 20px;
     padding: 20px;
@@ -230,12 +249,15 @@ hr {
     align-items: center;
 }
 
-.footer-navbar{
+/* ======= SECTION: FOOTER-SECTION ======= */
+
+
+.footer > .footer-navbar{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px 40px;
-    margin: 20px 0px;
+    margin: 80px 0px 0px 0px;
 
     & a{
         margin: 0px 10px;
@@ -245,7 +267,7 @@ hr {
     }
 }
 
-.contact-section > .copyrights{
+.footer > .copyrights{
     display: flex;
     justify-content: center;
     align-items: center;
