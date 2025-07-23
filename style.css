@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ======= SECTION: NAVBAR ======= */
+
+.navbar {
+    height: 10vh;
+    width: 100vw;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar>.name-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar>.links {
+    font-size: 1.5rem;
+
+    & i {
+        margin: 0px 10px;
+    }
+}
+
+/* ======= SECTION: HERO-SECTION ======= */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 40px;
+    margin: 75px 0px;
+}
+
+.hero-section>.content-section {
+    /* background-color: red; */
+    width: 50%;
+    font-size: 1.4rem;
+}
+
+.hero-section>.img {
+    /* background-color: red; */
+    & img {
+        height: 60vh;
+        width: 60vh;
+        border-radius: 50%;
+    }
+}
+
+#element {
+    color: rgb(26, 89, 206);
+    font-size: 3.2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section {
+        flex-direction: column;
+    }
+}
+
+hr {
+    width: 85vw;
+    margin: 40px auto;
+}
+
+/* ======= SECTION: ABOUT-SECTION ======= */
+
+.about-section {
+    padding: 0px 40px;
+}
+
+.about-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px;
+
+    & h5 {
+        color: grey;
+    }
+
+    & h2 {
+        font-size: 3rem;
+    }
+}
+
+.about-section>.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.about-section>.about>.about-img {
+    /* background-color: red; */
+    & img {
+        height: 60vh;
+        width: 60vh;
+        border-radius: 20%;
+    }
+}
+
+.about-section>.about>.about-content {
+    /* background-color: red; */
+    width: 65%;
+    font-size: 1.2rem;
+}
+
+.about-section>.about>.about-content>.work {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0px 0px 0px;
+    font-size: 1.2rem;
+    width: 250px;
+    height: 200px;
+}
+
+@media screen and (max-width: 480px) {
+    .about-section > .about {
+        flex-direction: column;
+    }
+}
+
+/* ======= SECTION: PROJECTS-SECTION ======= */
+
+.projects-section {
+    padding: 0px 40px;
+}
+
+.projects-section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px;
+
+    & h5 {
+        color: grey;
+    }
+
+    & h2 {
+        font-size: 3rem;
+    }
+}
+
+.projects-section>.projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projects-section>.projects>.amazon-website-clone,
+.tech-savvy {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    height: 350px;
+    width: 300px;
+}
+
+.projects-section>.projects>.amazon-website-clone, .tech-savvy {
+    & h2 {
+        text-align: left;
+        font-size: 23px;
+        height: 10%;
+        margin: 10px;
+    }
+
+    & p {
+        text-align: left;
+        vertical-align: middle;
+        height: 40%;
+        margin: 10px;
+    }
+
+    & .links {
+        font-size: 2rem;
+        margin: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        & i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 0px 5px;
+            height: 40%;
+            width: 40%;
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+/* ======= SECTION: CONTACT-SECTION ======= */
+
+.contact-section{
+    padding: 0px 40px;
+}
+
+.contact-section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px;
+
+    & h5 {
+        color: grey;
+    }
+
+    & h2 {
+        font-size: 3rem;
+    }
+}
+
+.contact-section > .contact-box{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+
+    & i{
+        font-size: larger;
+        margin: 0px 5px;
+    }
+
+    & span{
+        
+    }
+}
+
+.contact-section > .contact-box > .e-mail, .linkedln{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======= SECTION: FOOTER-SECTION ======= */
+
+
+.footer > .footer-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    margin: 80px 0px 0px 0px;
+
+    & a{
+        margin: 0px 10px;
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+    }
+}
+
+.footer > .copyrights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    color: grey;
+}
